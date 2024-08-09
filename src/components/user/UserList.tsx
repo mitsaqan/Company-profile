@@ -15,7 +15,7 @@ export default function UserList(props: {
         {title}
       </h1>
       <div className=" grid grid-cols-2 lg:grid-cols-4 gap-[3rem] items-center w-[80%]  mt-[4rem]  mx-auto ">
-        {employees.map((employee: Employee) => (
+        {employees.map((employee) => (
           <UserCard employee={employee} />
         ))}
       </div>

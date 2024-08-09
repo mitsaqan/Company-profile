@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import { title } from "process";
+
 import React, { useState } from "react";
-import Navlink from "./NavLink";
-import { motion, stagger } from "framer-motion";
+
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const topVariants = {
   closed: {
@@ -67,9 +68,15 @@ export default function Navbar() {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-12 xl:px-48 text-xl  ">
       {/* LINKS */}
-      <div className="hidden md:flex gap-4 w-1/3 ">
+      <div className="hidden md:flex gap-4 w-1/3  ">
         {links.map((link) => (
-          <Navlink link={link} key={link.title} />
+          <Link
+            href={link.url}
+            key={link.title}
+            className="hover:text-white hover:bg-black hover:rounded-md"
+          >
+            {link.title}
+          </Link>
         ))}
       </div>
       {/* LOGO */}
