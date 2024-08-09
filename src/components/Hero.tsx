@@ -10,8 +10,8 @@ export default function Hero() {
               Elevated in every way
             </h1>
             <p className="text-black italic text-center lg:text-left mb-4 ">
-              "Possess the new Smartwatch level <br />
-              that abble to help your life and very elegant in your hand"{" "}
+              "Possess the new Smartwatch level that abble to help your life and
+              very elegant in your hand"
             </p>
           </div>
         </div>
