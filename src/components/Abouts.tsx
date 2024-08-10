@@ -33,7 +33,7 @@ export default function Abouts() {
             your life, keeping you connected, active, and informed.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4 mb-16">
           {featured.map((feature, index) => {
             return (
               <div
